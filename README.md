@@ -24,7 +24,7 @@ To run this project, you will need:
   - pandas
   - Pillow
   - math
-  - You can install the required libraries using pip: ``bash <br>
+  - You can install the required libraries using pip: <br>``bash <br>
                                                        pip install pandas Pillow
 
 
