@@ -5,7 +5,7 @@
 This project is an algorithmic trading system designed to analyze market data, generate trading signals, and execute trades based on predefined strategies.
 The system utilizes historical market data to train machine learning models that predict future price movements, allowing for informed trading decisions.
 <br>
-<br>
+
 
 ## Features
 
@@ -17,7 +17,7 @@ The system utilizes historical market data to train machine learning models that
 - **Error Handling**: Robust error handling and logging to ensure smooth execution and debugging of the trading system.
 - **Directory Management**: Automatic creation of necessary directories for storing datasets, models, and outputs.<br>
 <br>
-<br>
+
   
 
 ## Requirements
@@ -32,7 +32,7 @@ To run this project, you will need:
   - You can install the required libraries using pip: <br>``bash <br>
                                                        pip install pandas Pillow
     <br>
-<br>
+
 
 
 Usage: <br>
@@ -44,14 +44,14 @@ Run the Project: Execute the main script to start the data processing and tradin
 
 Output: Generated images and trading signals will be saved in the appropriate directories for further analysis.
 <br>
-<br>
+
 
 
 Contributing:
 Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. 
 Make sure to include tests for any new features.
 <br>
-<br>
+
 
 
 Acknowledgements: <br>
