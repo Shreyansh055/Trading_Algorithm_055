@@ -27,17 +27,17 @@ To run this project, you will need:
   - You can install the required libraries using pip:
 
 ``bash 
-pip install pandas Pillow
+  pip install pandas Pillow
 
 
 Usage:
->Data Preparation: Place your historical market data CSV files in the csv directory. Ensure the filenames follow the convention {ticker}_{timeframe}.csv.
+Data Preparation: Place your historical market data CSV files in the csv directory. Ensure the filenames follow the convention {ticker}_{timeframe}.csv.
 
->Configuration: Modify the parameters in the code, such as the ticker symbol, timeframes, and SMA periods as needed.
+Configuration: Modify the parameters in the code, such as the ticker symbol, timeframes, and SMA periods as needed.
 
->Run the Project: Execute the main script to start the data processing and trading signal generation.
+Run the Project: Execute the main script to start the data processing and trading signal generation.
 
->Output: Generated images and trading signals will be saved in the appropriate directories for further analysis.
+Output: Generated images and trading signals will be saved in the appropriate directories for further analysis.
 
 
 Contributing:
@@ -47,4 +47,5 @@ Make sure to include tests for any new features.
 
 Acknowledgements:
 Pandas Documentation (https://pandas.pydata.org/docs/)
+<br>
 Pillow Documentation (https://pillow.readthedocs.io/en/stable/)
