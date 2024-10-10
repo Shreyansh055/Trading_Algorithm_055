@@ -1,4 +1,4 @@
-C:\Users\user123\PycharmProjects\Hackathon-Finam-NN-Trade-Robot\venv\Scripts\python.exe C:\Users\user123\PycharmProjects\Hackathon-Finam-NN-Trade-Robot\7_live_strategy.py
+
 2023-05-11 21:49:19,603 DEBUG:Using proactor: IocpProactor
 2023-05-11 21:49:20,192 DEBUG:Creating converter from 3 to 5
 2023-05-11 21:49:20,348 DEBUG:Получение исторических данных по тикеру: SBER

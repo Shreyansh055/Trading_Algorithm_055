@@ -5,10 +5,6 @@ We generate images according to the following algorithm:
 interval on timeframe_0.
 2. If the closing price on the higher timeframe_1 > closing price of the previous candle on the higher
 timeframe_1, then assign class 1 to this image, otherwise class 0.
-P.S. SMA1, SMA2 - moving averages
-Author: Oleg Shpagin
-Github: https://github.com/WISEPLAT
-Telegram: https://t.me/OlegSh777
 """
 
 exit(777)  # To prevent running the code, otherwise it will overwrite results

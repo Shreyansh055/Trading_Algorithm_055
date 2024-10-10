@@ -1,9 +1,5 @@
 """
-    В этом коде реализована проверка предсказаний нейросетью классов картинок.
-
-    Автор: Олег Шпагин
-    Github: https://github.com/WISEPLAT
-    Telegram: https://t.me/OlegSh777
+In this code, we implement a check of the neural network's image class predictions.
 """
 
 import os
@@ -14,32 +10,32 @@ from PIL import Image
 from keras.models import load_model
 from keras.utils.image_utils import img_to_array
 
-from my_config.trade_config import Config  # Файл конфигурации торгового робота
+from my_config.trade_config import Config  # Configuration file for the trading bot
 
 
 if __name__ == "__main__":
 
-    timeframe_0 = Config.timeframe_0  # таймфрейм на котором торгуем == таймфрейму на котором обучали нейросеть
+    timeframe_0 = Config.timeframe_0  # the timeframe we trade on == the timeframe the neural network was trained on
 
-    # загружаем выбранную нами обученную нейросеть
+    # load the trained neural network
     model = load_model(os.path.join("NN_winner", "cnn_Open.hdf5"))
-    # Проверяем её архитектуру
+    # Check its architecture
     model.summary()
 
-    # загружаем картинку для теста предсказания её класса
+    # load an image to test its class prediction
     _path0 = functions.join_paths(["NN", f"training_dataset_{timeframe_0}", "0"])
-    images_class_0 = [f for f in os.listdir(_path0) if os.path.isfile(os.path.join(_path0, f))]  # картинки класса 0
+    images_class_0 = [f for f in os.listdir(_path0) if os.path.isfile(os.path.join(_path0, f))]  # images of class 0
     _path1 = functions.join_paths(["NN", f"training_dataset_{timeframe_0}", "1"])
-    images_class_1 = [f for f in os.listdir(_path1) if os.path.isfile(os.path.join(_path1, f))]  # картинки класса 1
+    images_class_1 = [f for f in os.listdir(_path1) if os.path.isfile(os.path.join(_path1, f))]  # images of class 1
 
-    images_class_0 = images_class_0[:10]  # оставляем первые 10
-    images_class_1 = images_class_1[:10]  # оставляем первые 10
+    images_class_0 = images_class_0[:10]  # keep the first 10
+    images_class_1 = images_class_1[:10]  # keep the first 10
 
     # print(images_class_0)
 
     for _img in images_class_0:
         img = Image.open(os.path.join(_path0, _img))
-        # отправляем картинку в нейросеть
+        # send the image to the neural network
         img_array = img_to_array(img)  # https://www.tensorflow.org/api_docs/python/tf/keras/utils/img_to_array
         # print(img_array.shape)
         img_array = np.expand_dims(img_array, axis=0)
@@ -51,7 +47,7 @@ if __name__ == "__main__":
 
     for _img in images_class_1:
         img = Image.open(os.path.join(_path1, _img))
-        # отправляем картинку в нейросеть
+        # send the image to the neural network
         img_array = img_to_array(img)  # https://www.tensorflow.org/api_docs/python/tf/keras/utils/img_to_array
         # print(img_array.shape)
         img_array = np.expand_dims(img_array, axis=0)
