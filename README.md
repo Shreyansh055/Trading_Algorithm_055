@@ -1,63 +1,51 @@
-# Trading_Algorithm_055
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+# Algorithmic Trading Project
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+## Overview
 
-header {
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-}
+This project is an algorithmic trading system designed to analyze market data, generate trading signals, and execute trades based on predefined strategies.
+The system utilizes historical market data to train machine learning models that predict future price movements, allowing for informed trading decisions.
 
-header h1 {
-    margin: 0;
-}
+## Features
 
-nav ul {
-    list-style-type: none;
-}
+- **Data Retrieval**: The project includes functions to load historical market data from CSV files, which contain OHLCV (Open, High, Low, Close, Volume) data for various financial instruments.
+- **Technical Indicators**: Implementation of various technical indicators, including Simple Moving Averages (SMA), to analyze price trends and generate signals.
+- **Timeframe Management**: Support for multiple timeframes (e.g., M1, H1, D1) to cater to different trading strategies and preferences.
+- **Classification System**: A classification system that categorizes future price movements based on expected changes and historical patterns.
+- **Image Generation**: Visualization of trading signals and historical price data through generated images, aiding in model training and testing.
+- **Error Handling**: Robust error handling and logging to ensure smooth execution and debugging of the trading system.
+- **Directory Management**: Automatic creation of necessary directories for storing datasets, models, and outputs.
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
+## Requirements
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+To run this project, you will need:
 
-main {
-    padding: 20px;
-}
+- Python 3.x
+- Required libraries:
+  - `pandas`
+  - `Pillow`
+  - `math`
+  
+You can install the required libraries using pip:
 
-section {
-    margin-bottom: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+```bash
+pip install pandas Pillow
 
-h2 {
-    color: #007bff;
-}
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #007bff;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+Usage:
+>Data Preparation: Place your historical market data CSV files in the csv directory. Ensure the filenames follow the convention {ticker}_{timeframe}.csv.
+
+>Configuration: Modify the parameters in the code, such as the ticker symbol, timeframes, and SMA periods as needed.
+
+>Run the Project: Execute the main script to start the data processing and trading signal generation.
+
+>Output: Generated images and trading signals will be saved in the appropriate directories for further analysis.
+
+
+Contributing:
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. 
+Make sure to include tests for any new features.
+
+
+Acknowledgements:
+Pandas Documentation (https://pandas.pydata.org/docs/)
+Pillow Documentation (https://pillow.readthedocs.io/en/stable/)
