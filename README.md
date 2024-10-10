@@ -21,13 +21,12 @@ To run this project, you will need:
 
 - Python 3.x
 - Required libraries:
-  - `pandas`
-  - `Pillow`
-  - `math`
-  
-You can install the required libraries using pip:
+  - pandas
+  - Pillow
+  - math
+  - You can install the required libraries using pip:
 
-```bash
+``bash 
 pip install pandas Pillow
 
 
