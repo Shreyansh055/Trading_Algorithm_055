@@ -43,7 +43,7 @@ Contributions are welcome! If you would like to contribute to this project, plea
 Make sure to include tests for any new features.
 
 
-Acknowledgements:
+Acknowledgements: <br>
 Pandas Documentation (https://pandas.pydata.org/docs/)
 <br>
 Pillow Documentation (https://pillow.readthedocs.io/en/stable/)
