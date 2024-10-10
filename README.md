@@ -1,4 +1,4 @@
-# Algorithmic Trading Project
+# Algorithmic Trading Strategy
 
 ## Overview
 
