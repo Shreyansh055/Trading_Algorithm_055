@@ -26,11 +26,11 @@ To run this project, you will need:
   - math
   - You can install the required libraries using pip:
 
-``bash 
+``bash <br>
   pip install pandas Pillow
 
 
-Usage:
+Usage: <br>
 Data Preparation: Place your historical market data CSV files in the csv directory. Ensure the filenames follow the convention {ticker}_{timeframe}.csv.
 
 Configuration: Modify the parameters in the code, such as the ticker symbol, timeframes, and SMA periods as needed.
